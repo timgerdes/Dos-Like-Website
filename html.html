@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programmieren macht Spaß</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="res/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="monitor">
+    <nav>
+        <div class="title">
+            <p>Programmieren macht Spaß</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="startseite.html#noLoad">Startseite</a></li>
+                <li class="active"><a href="#">HTML / CSS</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>HTML / CSS</h1>
+        <h2>Was sind HTML und CSS?</h2>
+        <p>HTML und CSS sind maßgeblich dafür verantwortlich, wie Internetseiten auf unserem Endgerät  dargestellt werden. HTML (Hypertext-Markup-Language) ist eine Auszeichnungssprache, durch die Texte und anderen Daten strukturiert werden. Das CSS (Cascading Style Sheets) formatiert die durch das HTML strukturierte Daten. Das <a href="https://www.w3.org/" target="_blank">World Wide Web Consortium (W3C)</a> entwickelt diese beiden Sprachen ständig weiter, sodass die aktuellen Version HTML 5.2 und CSS3 sind.</p>
+        <h2>Was lässt sich mit HTML und CSS programmieren?</h2>
+        <p>Mit HTML und CSS lassen sich Internetseiten erstellen, egal ob eine kleine Seite für den eigenen Verein oder ob eine große Seite für beispielsweise einen Onlineshop wie Amazon. Moderne Internetseiten können nicht nur auf dem Computer dargestellt werden, sondern auch auf mobilen Endgeräten. Mit CSS ist es auch möglich, dass die Seite auf dem Smartphone oder Tablet anders dargestellt wird als auf dem Computer. Gerade in der heutigen Zeit ist es sehr wichtig, dass große Seiten vor allem auch auf Smartphones schön dargestellt werden. Mit HTML5 und CSS3 hat aber auch die Welt der Spiele Einzug in den Browser gefunden, denn durch vielfältige Gestaltungsmöglichkeiten ist es inzwischen möglich Spiele ohne weitere Software im Browser darstellen zu lassen.</p>
+        <h2>Hallo Welt!</h2>
+        <p>Der folgende HTML Code zeigt eine einfach Seite mit dem Inhalt <a href="https://de.wikipedia.org/wiki/Hallo-Welt-Programm" target="_blank">"Hallo Welt!"</a>. Probier doch mal den Code in eine HTML Datei (Endung .html) zu kopieren und lass sie Dir im Browser anzeigen.</p>
+        <pre><code class="language-html">&lt;html lang=&quot;de&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Hallo Welt&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Hallo Welt!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <p>Mit diesem CSS Code können wir unseren Text blau färben.</p>
+        <pre><code class="language-css">p {
+    color: #0000ff;
+}</code></pre>
+        <p>Damit wir die Änderung auch sehen können, müssen wir den &lt;head&gt; Tag wie folgt ändern</p>
+        <pre><code class="language-html">&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Hallo Welt&lt;/title&gt;
+	&lt;style&gt;
+		p {
+			color: #0000ff;
+		}
+	&lt;/style&gt;
+&lt;/head&gt;</code></pre>
+        <p>Vielleicht habe ich ja Dein Interesse geweckt und Du möchtest noch mehr HTML und CSS Code sehen: Dann lade Dir diese Internetseite <a href="html.zip" target="_blank">hier</a> komplett herunter.</p>
+        <h2>Womit wird programmiert?</h2>
+        <p>Um mit HTML und CSS zu programmieren sind nicht zwangsläufig spezielle Programme notwendig, da die einfache Struktur es auch möglich macht mit normalen Texteditoren zu arbeiten. Allerdings gibt es auch für diese beiden Sprachen IDEs, die das Programmieren vereinfachen. Hier ist ein kleiner Überblick:</p>
+        <table>
+            <thead>
+                <tr>
+                    <td>Programm</td>
+                    <td>Infos</td>
+                    <td>Kosten</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Notepad%2B%2B_Logo.png" alt="Notepad++ Logo"></td>
+                    <td><p>Notepad++ ist ein kostenloser Texteditor für Windows, der unter der <a href="https://de.wikipedia.org/wiki/GNU_General_Public_License" target="_blank">GNU General Public License</a>  für freie Software lizenziert ist. In der aktuellen Version unterstützt das Programm auch beim Arbeiten mit HTML und CSS durch Ergänzungen und das Färben von beispielsweise HTML Tags. Allerdings unterstützt es nicht weitgreifend beim Programmieren.</p></td>
+                    <td><p>Das Programm wird komplett kostenfrei unter der GNU GPL zur Verfügung gestellt.</p><br><a href="https://notepad-plus-plus.org/" target="_blank" class="button">Download</a></td>
+                </tr>
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/PhpStorm_Icon.svg" alt="PhpStorm Logo"></td>
+                    <td><p>PhpStorm ist eine kostenpflichtige integrierte Entwicklungsumgebung der Firma JetBrains für die Programmiersprache PHP, mit der sich aber auch HTML und CSS einfach programmieren lassen. Ein durchdachtes Design und die clevere Software helfen aktiv beim Programmieren. Der Code wird farbig sinnvoll hinterlegt und Eingaben automatisch ergänzt, sowie Fehler des Syntax angezeigt.</p></td>
+                    <td><p>Das Programm lässt sich kostenlos für 30 Tage testen. Sonst kostet es im ersten Jahr 199€, allerdings können Studenten und Lehrer es kostenlos runterladen.</p><br><a href="https://www.jetbrains.com/phpstorm/" target="_blank" class="button">Download</a></td>
+                </tr>
+                <tr>
+                    <td><img src="https://static.wikia.nocookie.net/logopedia/images/e/ec/EW4.png/revision/latest/scale-to-width-down/256?cb=20181030164207" alt="ExpressionWeb Logo"></td>
+                    <td><p>Microsoft Web Expression bringt einen WYSIWYG- und einen Quellcodeeditor mit, sodass Teile der Website mit einer grafischen Oberfläche gestaltet werden können. Auch hier wird der Quellcode anschaulich dargestellt und automatisch ergänzt. Durch den WYSIWYG-Editor eignet sich das Programm vor allem für Anfänger.</p></td>
+                    <td><p>Das Programm steht kostenlos auf der Seite von Microsoft zum Download bereit.</p><br><a href="https://www.microsoft.com/en-us/download/details.aspx?id=36179" target="_blank" class="button">Download</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="controls">
+    <ul>
+        <li><span class="led off">__</span></li>
+        <li><span class="led orange">__</span></li>
+        <li><span class="led green">__</span></li>
+    </ul>
+</div>
+</body>
+<script src="prism.js"></script>
+</html>

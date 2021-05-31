@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programmieren macht Spaß</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="res/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="monitor">
+    <nav>
+        <div class="title">
+            <p>Programmieren macht Spaß</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="startseite.html#noLoad">Startseite</a></li>
+                <li><a href="html.html">HTML / CSS</a></li>
+                <li class="active"><a href="#">Javascript</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Javascript</h1>
+        <h2>Was ist Javascript?</h2>
+        <p>Javascript ist eine Skriptsprache für dynamische Inhalte auf Internetseiten, die die Möglichkeiten von HTML und CSS erweitert. Durch die vielseitigen Möglichkeiten fällt Javascript immer wieder negativ auf, vor allem durch nervige Werbe-Popups, aber auch teilweise missbräuchlich nutzbaren Code, da Javascript im Browser ausgeführt wird. Daher bieten immer mehr Browser die Funktion an Javascript zu deaktivieren.  Inzwischen findet Javascript aber auch vermehrt Anwendung in serverseitigen Ausführungen, wie beispielsweise Node.js.</p>
+        <h2>Was lässt sich mit Javascript programmieren?</h2>
+        <p>Javascript dient nur als Ergänzung für HTML, es kann also unabhängig von HTML keine Internetseiten darstellen. Allerdings kann es beispielsweise dazu genutzt werden Daten zu validieren, wie beispielsweise in einem Kontaktformular auf einer Internetseite. Außerdem kann Javascript dynamisch Daten nachladen ohne die ganze Seite neu laden zu müssen, was es ermöglicht zum Beispiel Suchvorschläge in einer Suche anzeigen zu lassen. Auch für Browsergames ist Javascript geeignet, da darüber die einzelnen Elemente des Spiels angesteuert und verwaltet werden können.</p>
+        <h2>Hallo Welt!</h2>
+        <p>Mit dem folgenden Code öffnet sich ein kleines Popup, in dem <a href="https://de.wikipedia.org/wiki/Hallo-Welt-Programm" target="_blank">"Hallo Welt!"</a> steht.</p>
+        <pre><code class="language-javascript">alert('Hello, world!');</code> </pre>
+        <p>Damit Du den Code nutzen kannst, musst Du ihn noch in ein HTML Dokument wie folgt einbinden.</p>
+        <pre><code class="language-html">&lt;html lang=&quot;de&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Hello World&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script&gt;alert('Hallo Welt!');&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <h2>Womit wird programmiert?</h2>
+        <p>Javascript lässt sich mit jedem Texteditor programmieren, allerdings ist geht es leichter von der Hand, wenn Du eine IDE benutzt. Vielleicht ist hier ja was für Dich dabei.</p>
+        <table>
+            <thead>
+            <tr>
+                <td>Programm</td>
+                <td>Infos</td>
+                <td>Kosten</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Notepad%2B%2B_Logo.png" alt="Notepad++ Logo"></td>
+                <td><p>Notepad++ ist ein kostenloser Texteditor für Windows, der unter der <a href="https://de.wikipedia.org/wiki/GNU_General_Public_License" target="_blank">GNU General Public License</a> für freie Software lizenziert ist. In der aktuellen Version unterstützt das Programm auch beim Arbeiten mit HTML und CSS durch Ergänzungen und das Färben von beispielsweise HTML Tags. Allerdings unterstützt es nicht weitgreifend beim Programmieren.</p></td>
+                <td><p>Das Programm wird komplett kostenfrei unter der GNU GPL zur Verfügung gestellt.</p><br><a href="https://notepad-plus-plus.org/" target="_blank" class="button">Download</a></td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Atom_editor_logo.svg" alt="Atom Logo"></td>
+                <td><p>Atom ist ein quelloffener Texteditor auf Basis von Electron. Standartmäßig unterstützt er das Programmieren von Javascript, HTML und CSS, lässt sich aber durch Plugins erweitern. Das Projekt ist eng mit Github verzahnt und vereinfacht so vor allem die Arbeit an Projekten, die später dort gehostet werden sollen.</p></td>
+                <td><p>Das Programm wird komplett kostenlos unter der <a href="https://de.wikipedia.org/wiki/MIT-Lizenz" target="_blank">MIT-Lizenz</a> zur Verfügung gestellt.</p><br><a href="https://www.atom.io" target="_blank" class="button">Download</a></td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Sublime_Text_3_logo.png" alt="Sublime Text Logo"></td>
+                <td><p>SublimeText ist ein kostenpflichtiger Texteditor, der sehr vielseitig nutzbar ist. Vor allem der Vollbildmodus, in dem mehrere Dateien gleichzeitig bearbeitet werden können, überzeugt sehr. Der Editor lässt sich leicht erweitern und nach Belieben anpassen.</p></td>
+                <td><p>Aktuell ist das Programm kostenlos, für die weitere Verwendung muss aber eine Lizenz für 80$ gekauft werden.</p><br><a href="https://www.sublimetext.com/3" target="_blank" class="button">Download</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="controls">
+    <ul>
+        <li><span class="led off">__</span></li>
+        <li><span class="led orange">__</span></li>
+        <li><span class="led green">__</span></li>
+    </ul>
+</div>
+</body>
+<script src="prism.js"></script>
+</html>

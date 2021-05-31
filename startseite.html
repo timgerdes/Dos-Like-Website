@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programmieren macht Spaß</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="res/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="monitor">
+        <nav>
+            <div class="title delayed" id="title">
+                <p>Programmieren macht Spaß</p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="active"><a href="#">Startseite</a></li>
+                    <li><a href="html.html">HTML / CSS</a></li>
+                    <li><a href="javascript.html">Javascript</a></li>
+                    <li><a href="php.html">PHP</a></li>
+                    <li><a href="java.html">Java</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container delayed" id="container">
+            <h1>Startseite</h1>
+            <p><i>Die Informatik nimmt einen immer größer werdenden Teil unseres Lebens ein. Schon heute haben gut 66% der Menschheit ein Smartphone und die Tendenz ist steigend. Aber nicht nur Smartphones kontrollieren diesen Themenbereich, heutzutage finden sich in fast allen Bereichen des Alltags leichte bis aufwendige Software wieder, die dem Menschen Aufgaben abnimmt oder sie optimiert. Von Kaffeemaschinen über moderne Autos hinzu vollautomatisierten Fabriken ist der Themenbereich Informatik gar nicht mehr wegzudenken.</i></p>
+            <p>Auf dieser Seite soll es deshalb darum gehen einen ersten Einstieg in das Programmieren zu bekommen, denn auch als Hobby kann es viel Spaß und auch Vorteile bringen, aber auch beispielsweise im Beruf kann ein grundlegendes Verständnis von Informatik von Vorteil sein.  Allerdings wollen wir uns eher mit verschiedenen Programmiersprachen beschäftigen und einen kleinen Einstieg in den Umgang mit diesen geben.</p>
+            <p>Aber was ist eigentlich überhaupt eine Programmiersprache? „Eine Programmiersprache ist eine formale Sprache zur Formulierung von Datenstrukturen und Algorithmen, d. h. von Rechenvorschriften, die von einem Computer ausgeführt werden können. Sie setzen sich aus Anweisungen nach einem vorgegebenen Muster zusammen, der sogenannten Syntax.“. Oder, vielleicht etwas blauäugig, zusammengefasst ist eine Programmiersprache, die Sprache, die beispielsweise Mark Zuckerberg und sein Team schreiben müssen, damit wir Facebook so auf unserem Bildschirm sehen, wie sie es sich erdacht haben.</p>
+            <p>Wir beschäftigen uns heutzutage überwiegend mit höheren Programmiersprachen, also Sprachen, die nicht direkt von einem Mikroprozessor verstanden werden kann, sondern meistens erst durch einen Interpreter oder Compiler in eine sogenannte Maschinensprache übersetzt werden muss, die der Mikroprozessor verarbeiten kann. Diese Sprachen vereinfachen das Programmieren von Anwendungen stark, da eine höhere Programmiersprache abstrakter ist als eine Maschinensprache. Es lassen sich also komplexere logische Zusammenhänge und Anweisungen mit weniger Text ausdrücken. Von der ersten wirklichen Programmiersprache aus dem Jahr 1946 bis heute hat sich viel getan: Schätzungen nach gibt es aktuell bis zu 2000 aktiv genutzte Programmiersprachen weltweit. Allerdings gibt es auch kleine Programmiersprachen oder scherzhafte Projekt aus der Onlinecommunity, sodass es bis zu möglichen 25000 Programmiersprachen geben soll.</p>
+            <p>Vielleicht erklärt Dir dieses Video aber besser, warum Du auch mit dem Programmieren anfangen solltest:</p>
+            <div class="video">
+                <iframe src="https://www.youtube-nocookie.com/embed/QYSx7st6Jgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="load" id="load">
+            <p>Computer wird hochgefahren</p>
+            <div class="bar">
+                <div class="wrapper">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <ul>
+            <li><span class="led off">__</span></li>
+            <li><span class="led orange">__</span></li>
+            <li><span class="led green">__</span></li>
+        </ul>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        if(window.location.href.endsWith("#noLoad")) {
+            document.getElementById("title").classList.remove("delayed");
+            document.getElementById("container").classList.remove("delayed");
+
+            document.getElementById("load").remove();
+        }
+    });
+
+    Element.prototype.remove = function() {
+        this.parentElement.removeChild(this);
+    }
+    NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+        for(var i = this.length - 1; i >= 0; i--) {
+            if(this[i] && this[i].parentElement) {
+                this[i].parentElement.removeChild(this[i]);
+            }
+        }
+    }
+</script>
+</html>

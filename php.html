@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programmieren macht Spaß</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="res/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="monitor">
+    <nav>
+        <div class="title">
+            <p>Programmieren macht Spaß</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="startseite.html#noLoad">Startseite</a></li>
+                <li><a href="html.html">HTML / CSS</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+                <li class="active"><a href="#">PHP</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>PHP</h1>
+        <h2>Was ist PHP?</h2>
+        <p>PHP ist eine Skriptsprache, die für die Erstellung dynamischer Interseiten. PHP (Hypertext Preprocessor) wird serverseitig verarbeitet. Der Quellcode wird also nicht an den Browser gesendet, sondern an einen Interpreter auf dem Webserver. Die Sprache zeichnet sich vor allem dadurch aus, dass sie mit Datenbanken und anderen Internetdiensten kommunizieren kann. PHP ist als freie Software unter der <a href="https://de.wikipedia.org/wiki/PHP-Lizenz" target="_blank">PHP-Lizenz</a> lizenziert und liegt aktuell in der Version 7.2.12 vor.</p>
+        <h2>Was lässt sich mit PHP programmieren?</h2>
+        <p>Da PHP ein <a href="https://de.wikipedia.org/wiki/Pr%C3%A4prozessor" target="_blank">Präprozessor</a> ist, findet es auch selten Gebrauch ohne andere Sprachen, wie beispielsweise HTML. So ist es mit PHP beispielsweise möglich die Anfragen der Nutzer zu verarbeiten und die richtigen Antworten rauszusuchen. Facebook beispielsweise arbeitete lange Zeit im Hintergrund mit PHP um beispielsweise für jeden Nutzer dynamisch Bilder oder News-Feed Einträge zu laden. Bei gewöhnlichen Anmeldeseiten werden über HTML die Eingaben abgefragt und an PHP weitergeleitet und beispielsweise mit der Datenbank abgeglichen. </p>
+        <h2>Hallo Welt!</h2>
+        <p>Mit dem folgenden Code kannst Du die Ausgabe <a href="https://de.wikipedia.org/wiki/Hallo-Welt-Programm" target="_blank">"Hallo Welt!"</a> erzeugen:</p>
+        <pre><code class="language-php">&lt;?php
+    echo 'Hallo Welt!';
+?&gt;</code></pre>
+        <p>Wenn Du Dir angucken möchtest, wie eine kleine Software in PHP aussieht, dann guck Dir doch mal eins meiner Projekte <a href="https://github.com/timgerdes/Crawler" target="_blank">hier auf Github</a> an.</p>
+        <h2>Womit wird programmiert?</h2>
+        <p>Da der Quellcode Deiner PHP-Software schnell komplizierter werden kann, empfiehlt es sich eine IDE zu verwenden, aber das Programmieren mit einem simplen Texteditor ist auch möglich.</p>
+        <table>
+            <thead>
+            <tr>
+                <td>Programm</td>
+                <td>Infos</td>
+                <td>Kosten</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Notepad%2B%2B_Logo.png" alt="Notepad++ Logo"></td>
+                <td><p>Notepad++ ist ein kostenloser Texteditor für Windows, der unter der <a href="https://de.wikipedia.org/wiki/GNU_General_Public_License" target="_blank">GNU General Public License</a>  für freie Software lizenziert ist. In der aktuellen Version unterstützt das Programm auch beim Arbeiten mit HTML und CSS durch Ergänzungen und das Färben von beispielsweise HTML Tags. Allerdings unterstützt es nicht weitgreifend beim Programmieren.</p></td>
+                <td><p>Das Programm wird komplett kostenfrei unter der GNU GPL zur Verfügung gestellt.</p><br><a href="https://notepad-plus-plus.org/" target="_blank" class="button">Download</a></td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/PhpStorm_Icon.svg" alt="PhpStorm Logo"></td>
+                <td><p>PhpStorm ist eine kostenpflichtige integrierte Entwicklungsumgebung der Firma JetBrains für die Programmiersprache PHP, mit der sich aber auch HTML und CSS einfach programmieren lassen. Ein durchdachtes Design und die clevere Software helfen aktiv beim Programmieren. Der Code wird farbig sinnvoll hinterlegt und Eingaben automatisch ergänzt, sowie Fehler des Syntax angezeigt.</p></td>
+                <td><p>Das Programm lässt sich kostenlos für 30 Tage testen. Sonst kostet es im ersten Jahr 199€, allerdings können Studenten und Lehrer es kostenlos runterladen.</p><br><a href="https://www.jetbrains.com/phpstorm/" target="_blank" class="button">Download</a></td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Atom_editor_logo.svg" alt="Atom Logo"></td>
+                <td><p>Atom ist ein quelloffener Texteditor auf Basis von Electron. Standartmäßig unterstützt er das Programmieren von PHP nicht, allerdings lässt es sich schnell durch ein <a href="https://atom.io/packages/ide-php" target="_blank">Plugin der Community</a> zu einer PHP IDE erweitern. Das Projekt ist eng mit Github verzahnt und vereinfacht so vor allem die Arbeit an Projekten, die später dort gehostet werden sollen.</p></td>
+                <td><p>Das Programm wird komplett kosten unter der <a href="https://de.wikipedia.org/wiki/MIT-Lizenz" target="_blank">MIT-Lizenz</a> zur Verfügung gestellt.</p><br><a href="https://www.atom.io" target="_blank" class="button">Download</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="controls">
+    <ul>
+        <li><span class="led off">__</span></li>
+        <li><span class="led orange">__</span></li>
+        <li><span class="led green">__</span></li>
+    </ul>
+</div>
+</body>
+<script src="prism.js"></script>
+</html>

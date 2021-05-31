@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programmieren macht Spaß</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="res/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="monitor">
+    <nav>
+        <div class="title">
+            <p>Programmieren macht Spaß</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="startseite.html#noLoad">Startseite</a></li>
+                <li><a href="html.html">HTML / CSS</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li class="active"><a href="#">Java</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Java</h1>
+        <h2>Was ist Java?</h2>
+        <p>Java ist eine plattformunabhängige Programmiersprache, die sowohl auf Rechnern als auch auf Servern ausgeführt werden kann. Der Quellcode muss dafür erst mit einem Compiler in Java-Bytecode umgewandelt werden, der dann nur in einer virtuellen Java-Maschine ausgeführt werden kann, die auf dem Computer zwangsläufig installiert sein muss. Besonders an der Sprache ist die vielseitige Einsatzmöglichkeiten und die große Anzahl an Schnittstellen. Java wird von Sun Microsystems, bzw. Oracle, entwickelt und liegt inzwischen in der Version 11 vor. Seit Jahren ist Java eine der populärsten Programmiersprachen.</p>
+        <h2>Was lässt sich mit Java programmieren?</h2>
+        <p>Ursprünglich wurden sogenannte Java Webapplets häufig im Webbrowser als Ergänzung zu Internetseite eingebunden, aber durch immer moderner werdendes HTML, CSS und auch Javascript hat dieser Bereich weitgehend an Bedeutung verloren. Der Einsatzbereich von Java ist aber dennoch sehr weitreichend, denn Java findet sich sogar in Kaffeemaschinen oder auch HiFi Geräten. Die meistens Apps auf Android Smartphones sind in Java geschrieben und auch populäre Spiele, wie beispielsweise Minecraft, sind in Java geschrieben.  </p>
+        <h2>Hallo Welt!</h2>
+        <p>In Java lässt sich ziemlich einfach mit folgendem Code <a href="https://de.wikipedia.org/wiki/Hallo-Welt-Programm" target="_blank">"Hallo Welt!"</a> ausgeben.</p>
+        <pre><code class="language-java">public class HalloWelt {
+
+    public static void main(String[] args) {
+        System.out.println("Hallo Welt!");
+    }
+
+}</code></pre>
+        <p>Wenn Dich interessiert, wie eine kleine Software in Java aussieht, dann guck Dir doch mal eins meiner Projekte <a href="https://github.com/timgerdes/2048-ai" target="_blank">hier auf Github</a> an.</p>
+        <h2>Womit wird programmiert?</h2>
+        <p>Java lässt sich am leichtestens in einer IDE programmieren, aber auch mit dem Texteditor möglich. Auf jeden Fall wird allerdings das <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">Java Development Kit (JDK)</a> benötigt um den Quellcode zu compilen.</p>
+        <table>
+            <thead>
+            <tr>
+                <td>Programm</td>
+                <td>Infos</td>
+                <td>Kosten</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Notepad%2B%2B_Logo.png" alt="Notepad++ Logo"></td>
+                <td><p>Notepad++ ist ein kostenloser Texteditor für Windows, der unter der <a href="https://de.wikipedia.org/wiki/GNU_General_Public_License" target="_blank">GNU General Public License</a> für freie Software lizenziert ist. Allerdings unterstützt es nicht weitgreifend beim Programmieren und enthält auch keine Funktion zum automatischen Compilen des Programms.</p></td>
+                <td><p>Das Programm wird komplett kostenfrei unter der GNU GPL zur Verfügung gestellt.</p><br><a href="https://notepad-plus-plus.org/" target="_blank" class="button">Download</a></td>
+            </tr>
+            <tr>
+                <td><img src="https://cdn.worldvectorlogo.com/logos/eclipse-11.svg" alt="Eclipse Logo"></td>
+                <td><p>Eclipse greift clever in die Entwicklung ein, es ergänzt den Code sinnvoll und bietet die Möglichkeit die Software komplett zu compilen und auch im Editor zu testen. Durch viele, sowohl kostenlose, als auch kommerzielle Plugins lässt es sich beliebig erweitern. </p></td>
+                <td><p>Das Programm wird komplett kostenlos unter der <a href="https://de.wikipedia.org/wiki/Eclipse_Public_License" target="_blank">EPL-Lizenz</a> zur Verfügung gestellt.</p><br><a href="https://www.eclipse.org/downloads/" target="_blank" class="button">Download</a></td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/512px-IntelliJ_IDEA_Icon.svg.png" alt="IntelliJ Logo"></td>
+                <td><p>IntelliJ von Jetbrains ist ein sehr durchdachter Editor, der nicht nur mit einem schlichten Design, sondern auch mit einer sehr intelligenten Code-Vervollständigung und Optimierungsfunktion ausgestattet ist.</p></td>
+                <td><p>Es gibt eine kostenlose Community Version, sowie eine kostenpflichte Ultimate Version, die es aber für Studenten und Lehrer kostenlos gibt.</p><br><a href="https://www.jetbrains.com/idea/download/#section=windows" target="_blank" class="button">Download</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="controls">
+    <ul>
+        <li><span class="led off">__</span></li>
+        <li><span class="led orange">__</span></li>
+        <li><span class="led green">__</span></li>
+    </ul>
+</div>
+</body>
+<script src="prism.js"></script>
+</html>
