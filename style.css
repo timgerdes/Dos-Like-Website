@@ -13,7 +13,7 @@ body {
     background: linear-gradient(#282828, #3b3b3b);
     box-sizing: border-box;
     border: 10px solid black;
-    font-family: "MS-Dos";
+    font-family: "MS-Dos", monospace;
 }
 
 a {
