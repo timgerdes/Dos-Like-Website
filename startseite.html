@@ -6,6 +6,28 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
     <link rel="icon" href="res/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if(window.location.href.endsWith("#noLoad")) {
+                document.getElementById("title").classList.remove("delayed");
+                document.getElementById("container").classList.remove("delayed");
+
+                document.getElementById("load").remove();
+            }
+        });
+
+        Element.prototype.remove = function() {
+            this.parentElement.removeChild(this);
+        }
+        NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+            for(var i = this.length - 1; i >= 0; i--) {
+                if(this[i] && this[i].parentElement) {
+                    this[i].parentElement.removeChild(this[i]);
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="monitor">
@@ -54,26 +76,4 @@
         </ul>
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script>
-    $(document).ready(function () {
-        if(window.location.href.endsWith("#noLoad")) {
-            document.getElementById("title").classList.remove("delayed");
-            document.getElementById("container").classList.remove("delayed");
-
-            document.getElementById("load").remove();
-        }
-    });
-
-    Element.prototype.remove = function() {
-        this.parentElement.removeChild(this);
-    }
-    NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
-        for(var i = this.length - 1; i >= 0; i--) {
-            if(this[i] && this[i].parentElement) {
-                this[i].parentElement.removeChild(this[i]);
-            }
-        }
-    }
-</script>
 </html>
